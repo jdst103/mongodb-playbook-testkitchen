@@ -1,0 +1,37 @@
+---
+- name: Update source lists
+  apt: update_cache=yes
+
+- name: Upgrade all apt packages
+  apt: upgrade=dist
+
+- name: add MongoDB key
+  apt_key:
+    keyserver: hkp://keyserver.ubuntu.com:80
+    id: 0C49F3730359A14518585931BC711F9BA15703C6
+
+- name: Add MongoDB Repository
+  apt_repository:
+    repo: "deb [ arch=amd64 ] http://repo.mongodb.org/apt/ubuntu {{ ansible_distribution_release }}/mongodb-org/{{ mongodb_version }} multiverse"
+    state: "present"
+
+- name: Install MongoDB
+  apt: name=mongodb-org state=present allow_unauthenticated=yes update_cache=yes
+  notify:
+  - start mongodb
+
+- name: copy mongod.service file
+  copy:
+    src: "mongod.service"
+    dest: "/lib/systemd/system/mongod.service"
+  notify:
+  - restart mongodb
+
+- name: template mongod.conf file
+  template:
+    src: "mongod.conf"
+    dest: "/etc/mongod.conf"
+    backup: "yes"
+  notify:
+  - restart mongodb
+  - enable mongodb

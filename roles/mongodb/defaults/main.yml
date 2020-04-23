@@ -1,0 +1,4 @@
+---
+mongodb_version: "4.2"
+bind_ip: "0.0.0.0"
+port: 27017

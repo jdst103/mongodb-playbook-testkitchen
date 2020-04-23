@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: true
+  remote_user: ubuntu
+  vars:
+  - ansible_distribution_release: "xenial"
+  roles:
+  - mongodb
