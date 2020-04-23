@@ -1,15 +1,22 @@
-# Integration testing on a Nodejs APP provisioned by Ansible using Test Kitchen (INSPEC).
+# Integration testing on a MongoDB database provisioned by Ansible using Test Kitchen (INSPEC).
 
-Test kitchen spins up a VM and provisions the VM using the playbook in the root directory app.yml. This playbook calls two roles nginx and nodejs containing our tasks.
+Test kitchen spins up a VM and provisions the VM using the playbook in the root directory mongodb.yml.
+
+### The test consist of:
+- mongodb version > 3.2
+- we have defined mongodb to have a bind_ip of '0.0.0.0' and port 27017
+The port and bind_ip is defined in the template which is going to be sent to vm.
+The variables are defined in defaults so that its easily interchangeable.
+- the service of mongod is enabled and running
+
+## SETUP HELP
 
 NOTE:
 the VM is configured with ubuntu 16.04 and uses a ubuntu/xenial vm box.
 
-## SETUP HELP
-
 ### TO download Test Kitchen, CHEFDK was installed. which included the tool INSPEC to run our integration test.
 
- If a mac/linux user, run this command to make sure you a running the default ruby version (ignore if windows)
+If you are a  mac/linux user, run this command to make sure you a running the default ruby version (ignore if windows)
 ````
 echo 'eval "$(chef shell-init bash)"' >> ~/.bash_profile && source ~/.bash_profile
 ````
@@ -26,7 +33,7 @@ chefignore is where you ignore chef related files.
 kitchen.yml: This file describes your testing configuration, which is what you want to test and the target platforms.
 
 
-#### appended in kitchen.yml:
+#### Appended into kitchen.yml:
 
 tells Test kitchen to provision the VM using a specific playbook.
 defines location of integration test.

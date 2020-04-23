@@ -1,349 +1,2 @@
-I, [2020-04-23T12:41:36.263787 #48646]  INFO -- default-ubuntu-1604: -----> Cleaning up any prior instances of <default-ubuntu-1604>
-I, [2020-04-23T12:41:36.264045 #48646]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
-I, [2020-04-23T12:41:36.264806 #48646]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m0.00s).
-I, [2020-04-23T12:41:36.266317 #48646]  INFO -- default-ubuntu-1604: -----> Testing <default-ubuntu-1604>
-I, [2020-04-23T12:41:36.266433 #48646]  INFO -- default-ubuntu-1604: -----> Creating <default-ubuntu-1604>...
-I, [2020-04-23T12:41:36.283503 #48646]  INFO -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.6.0/gems/mixlib-shellout-3.0.9/lib/mixlib/shellout/unix.rb:343: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
-I, [2020-04-23T12:41:38.084594 #48646]  INFO -- default-ubuntu-1604: /opt/vagrant/embedded/gems/2.2.7/gems/vagrant-2.2.7/lib/vagrant/util/which.rb:37: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
-I, [2020-04-23T12:41:38.439205 #48646]  INFO -- default-ubuntu-1604: Bringing machine 'default' up with 'virtualbox' provider...
-I, [2020-04-23T12:41:39.056015 #48646]  INFO -- default-ubuntu-1604: ==> default: Importing base box 'bento/ubuntu-16.04'...
-I, [2020-04-23T12:41:48.701950 #48646]  INFO -- default-ubuntu-1604: [KProgress: 10%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
-I, [2020-04-23T12:41:48.950936 #48646]  INFO -- default-ubuntu-1604: ==> default: Checking if box 'bento/ubuntu-16.04' version '202002.04.0' is up to date...
-I, [2020-04-23T12:41:50.765595 #48646]  INFO -- default-ubuntu-1604: ==> default: Setting the name of the VM: kitchen-test-db-ansible-default-ubuntu-1604-a2beed47-0321-485d-a029-c4a83610493c
-I, [2020-04-23T12:41:51.851326 #48646]  INFO -- default-ubuntu-1604: ==> default: Clearing any previously set network interfaces...
-I, [2020-04-23T12:41:51.954247 #48646]  INFO -- default-ubuntu-1604: ==> default: Preparing network interfaces based on configuration...
-I, [2020-04-23T12:41:51.954960 #48646]  INFO -- default-ubuntu-1604:     default: Adapter 1: nat
-I, [2020-04-23T12:41:52.083469 #48646]  INFO -- default-ubuntu-1604: ==> default: Forwarding ports...
-I, [2020-04-23T12:41:52.201551 #48646]  INFO -- default-ubuntu-1604:     default: 22 (guest) => 2222 (host) (adapter 1)
-I, [2020-04-23T12:41:52.539170 #48646]  INFO -- default-ubuntu-1604: ==> default: Running 'pre-boot' VM customizations...
-I, [2020-04-23T12:41:52.642809 #48646]  INFO -- default-ubuntu-1604: ==> default: Booting VM...
-I, [2020-04-23T12:41:52.998015 #48646]  INFO -- default-ubuntu-1604: ==> default: Waiting for machine to boot. This may take a few minutes...
-I, [2020-04-23T12:41:53.464534 #48646]  INFO -- default-ubuntu-1604:     default: SSH address: 127.0.0.1:2222
-I, [2020-04-23T12:41:53.464925 #48646]  INFO -- default-ubuntu-1604:     default: SSH username: vagrant
-I, [2020-04-23T12:41:53.465239 #48646]  INFO -- default-ubuntu-1604:     default: SSH auth method: private key
-I, [2020-04-23T12:42:09.958925 #48646]  INFO -- default-ubuntu-1604:     default: 
-I, [2020-04-23T12:42:09.960311 #48646]  INFO -- default-ubuntu-1604:     default: Vagrant insecure key detected. Vagrant will automatically replace
-I, [2020-04-23T12:42:09.960400 #48646]  INFO -- default-ubuntu-1604:     default: this with a newly generated keypair for better security.
-I, [2020-04-23T12:42:11.185949 #48646]  INFO -- default-ubuntu-1604:     default: 
-I, [2020-04-23T12:42:11.186067 #48646]  INFO -- default-ubuntu-1604:     default: Inserting generated public key within guest...
-I, [2020-04-23T12:42:11.350039 #48646]  INFO -- default-ubuntu-1604:     default: Removing insecure key from the guest if it's present...
-I, [2020-04-23T12:42:11.508597 #48646]  INFO -- default-ubuntu-1604:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
-I, [2020-04-23T12:42:13.060978 #48646]  INFO -- default-ubuntu-1604: ==> default: Machine booted and ready!
-I, [2020-04-23T12:42:13.119047 #48646]  INFO -- default-ubuntu-1604: ==> default: Checking for guest additions in VM...
-I, [2020-04-23T12:42:13.357325 #48646]  INFO -- default-ubuntu-1604: ==> default: [vagrant-hostsupdater] Checking for host entries
-I, [2020-04-23T12:42:13.569412 #48646]  INFO -- default-ubuntu-1604: ==> default: Setting hostname...
-I, [2020-04-23T12:42:18.803799 #48646]  INFO -- default-ubuntu-1604: ==> default: Mounting shared folders...
-I, [2020-04-23T12:42:18.804582 #48646]  INFO -- default-ubuntu-1604:     default: /tmp/omnibus/cache => /Users/jasonrobinson/.kitchen/cache
-I, [2020-04-23T12:42:19.343964 #48646]  INFO -- default-ubuntu-1604: ==> default: Machine not provisioned because `--no-provision` is specified.
-I, [2020-04-23T12:42:22.717969 #48646]  INFO -- default-ubuntu-1604: [SSH] Established
-I, [2020-04-23T12:42:22.718721 #48646]  INFO -- default-ubuntu-1604: Vagrant instance <default-ubuntu-1604> created.
-I, [2020-04-23T12:42:22.721269 #48646]  INFO -- default-ubuntu-1604: Finished creating <default-ubuntu-1604> (0m46.45s).
-I, [2020-04-23T12:42:22.722167 #48646]  INFO -- default-ubuntu-1604: -----> Converging <default-ubuntu-1604>...
-I, [2020-04-23T12:42:22.724179 #48646]  INFO -- default-ubuntu-1604: Preparing files for transfer
-I, [2020-04-23T12:42:22.724287 #48646]  INFO -- default-ubuntu-1604: Preparing playbook
-I, [2020-04-23T12:42:22.724851 #48646]  INFO -- default-ubuntu-1604: Preparing inventory
-I, [2020-04-23T12:42:22.724960 #48646]  INFO -- default-ubuntu-1604: Preparing modules
-I, [2020-04-23T12:42:22.725821 #48646]  INFO -- default-ubuntu-1604: nothing to do for modules
-I, [2020-04-23T12:42:22.725915 #48646]  INFO -- default-ubuntu-1604: Preparing roles
-I, [2020-04-23T12:42:22.738976 #48646]  INFO -- default-ubuntu-1604: Preparing ansible.cfg file
-I, [2020-04-23T12:42:22.739271 #48646]  INFO -- default-ubuntu-1604: Empty ansible.cfg generated
-I, [2020-04-23T12:42:22.739604 #48646]  INFO -- default-ubuntu-1604: Preparing group_vars
-I, [2020-04-23T12:42:22.739974 #48646]  INFO -- default-ubuntu-1604: nothing to do for group_vars
-I, [2020-04-23T12:42:22.740045 #48646]  INFO -- default-ubuntu-1604: Preparing additional_copy_path
-I, [2020-04-23T12:42:22.740365 #48646]  INFO -- default-ubuntu-1604: Preparing host_vars
-I, [2020-04-23T12:42:22.740703 #48646]  INFO -- default-ubuntu-1604: nothing to do for host_vars
-I, [2020-04-23T12:42:22.740778 #48646]  INFO -- default-ubuntu-1604: Preparing hosts file
-I, [2020-04-23T12:42:22.741134 #48646]  INFO -- default-ubuntu-1604: Preparing spec
-I, [2020-04-23T12:42:22.742583 #48646]  INFO -- default-ubuntu-1604: Preparing library plugins
-I, [2020-04-23T12:42:22.743036 #48646]  INFO -- default-ubuntu-1604: nothing to do for library plugins
-I, [2020-04-23T12:42:22.743117 #48646]  INFO -- default-ubuntu-1604: Preparing callback plugins
-I, [2020-04-23T12:42:22.743504 #48646]  INFO -- default-ubuntu-1604: nothing to do for callback plugins
-I, [2020-04-23T12:42:22.743579 #48646]  INFO -- default-ubuntu-1604: Preparing filter_plugins
-I, [2020-04-23T12:42:22.743964 #48646]  INFO -- default-ubuntu-1604: nothing to do for filter_plugins
-I, [2020-04-23T12:42:22.744027 #48646]  INFO -- default-ubuntu-1604: Preparing lookup_plugins
-I, [2020-04-23T12:42:22.744352 #48646]  INFO -- default-ubuntu-1604: nothing to do for lookup_plugins
-I, [2020-04-23T12:42:22.744503 #48646]  INFO -- default-ubuntu-1604: Preparing ansible vault password
-I, [2020-04-23T12:42:22.744712 #48646]  INFO -- default-ubuntu-1604: Preparing additional_ssh_private_keys
-I, [2020-04-23T12:42:22.744859 #48646]  INFO -- default-ubuntu-1604: nothing to do for additional_ssh_private_keys
-I, [2020-04-23T12:42:22.744917 #48646]  INFO -- default-ubuntu-1604: Finished Preparing files for transfer
-I, [2020-04-23T12:42:22.745317 #48646]  INFO -- default-ubuntu-1604: Installing ansible, will try to determine platform os
-I, [2020-04-23T12:42:22.850837 #48646]  INFO -- default-ubuntu-1604: 0% [Working]            Hit:1 http://archive.ubuntu.com/ubuntu xenial InRelease
-I, [2020-04-23T12:42:22.851571 #48646]  INFO -- default-ubuntu-1604: 0% [Connecting to security.ubuntu.com (91.189.91.38)]                                                     Get:2 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
-I, [2020-04-23T12:42:22.921410 #48646]  INFO -- default-ubuntu-1604: 0% [2 InRelease 2,563 B/109 kB 2%] [Connecting to security.ubuntu.com (91.189.90% [1 InRelease gpgv 247 kB] [2 InRelease 5,419 B/109 kB 5%] [Connecting to sec                                                                               0% [1 InRelease gpgv 247 kB] [Waiting for headers]                                                  Get:3 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
-I, [2020-04-23T12:42:22.992761 #48646]  INFO -- default-ubuntu-1604: 0% [1 InRelease gpgv 247 kB] [3 InRelease 8,275 B/107 kB 8%] [Waiting for heade                                                                               0% [1 InRelease gpgv 247 kB] [Waiting for headers]                                                  0% [Waiting for headers]                        Get:4 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
-I, [2020-04-23T12:42:23.082142 #48646]  INFO -- default-ubuntu-1604: 0% [4 InRelease 2,546 B/109 kB 2%]0% [2 InRelease gpgv 109 kB] [4 InRelease 2,546 B/109 kB 2%]                                                            0% [4 InRelease 16.8 kB/109 kB 15%]0% [3 InRelease gpgv 107 kB] [Waiting for headers] [4 InRelease 16.8 kB/109 kB                                                                                Get:5 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [1,131 kB]
-I, [2020-04-23T12:42:23.508662 #48646]  INFO -- default-ubuntu-1604: 0% [3 InRelease gpgv 107 kB] [5 Packages 9,785 B/1,131 kB 1%] [4 InRelease 19.7                                                                               0% [5 Packages 177 kB/1,131 kB 16%] [4 InRelease 48.2 kB/109 kB 44%]                                                                    0% [5 Packages 361 kB/1,131 kB 32%]0% [4 InRelease gpgv 109 kB] [5 Packages 361 kB/1,131 kB 32%]                                                             25% [5 Packages 551 kB/1,131 kB 49%]                                    Get:6 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [852 kB]
-I, [2020-04-23T12:42:23.713080 #48646]  INFO -- default-ubuntu-1604: 27% [5 Packages 698 kB/1,131 kB 62%] [6 Packages 2,647 B/852 kB 0%]                                                                   35% [6 Packages 361 kB/852 kB 42%]35% [5 Packages store 0 B] [Waiting for headers] [6 Packages 364 kB/852 kB 43%]                                                                               Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages [913 kB]
-I, [2020-04-23T12:42:23.943768 #48646]  INFO -- default-ubuntu-1604: 35% [5 Packages store 0 B] [7 Packages 2,647 B/913 kB 0%] [6 Packages 364 kB/85                                                                               46% [5 Packages store 0 B] [7 Packages 577 kB/913 kB 63%]50% [5 Packages store 0 B] [Waiting for headers] [Waiting for headers]                                                                      Get:8 http://security.ubuntu.com/ubuntu xenial-security/main i386 Packages [653 kB]
-I, [2020-04-23T12:42:23.951444 #48646]  INFO -- default-ubuntu-1604: 50% [5 Packages store 0 B] [Waiting for headers] [8 Packages 0 B/653 kB 0%]                                                                           Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en [429 kB]
-I, [2020-04-23T12:42:24.058550 #48646]  INFO -- default-ubuntu-1604: 51% [5 Packages store 0 B] [9 Translation-en 0 B/429 kB 0%] [8 Packages 64.1 kB                                                                               Get:10 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en [321 kB]
-I, [2020-04-23T12:42:24.071755 #48646]  INFO -- default-ubuntu-1604: 61% [5 Packages store 0 B] [9 Translation-en 374 kB/429 kB 87%] [10 Translation                                                                               62% [5 Packages store 0 B] [10 Translation-en 51.3 kB/321 kB 16%]                                                                 Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [796 kB]
-I, [2020-04-23T12:42:24.122214 #48646]  INFO -- default-ubuntu-1604: 62% [5 Packages store 0 B] [11 Packages 0 B/796 kB 0%] [10 Translation-en 51.3                                                                                65% [11 Packages 108 kB/796 kB 14%] [10 Translation-en 209 kB/321 kB 65%]65% [6 Packages store 0 B] [11 Packages 108 kB/796 kB 14%] [10 Translation-en 2                                                                               Get:12 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [489 kB]
-I, [2020-04-23T12:42:24.190861 #48646]  INFO -- default-ubuntu-1604: 67% [6 Packages store 0 B] [11 Packages 176 kB/796 kB 22%] [12 Packages 3,269 B                                                                               73% [6 Packages store 0 B] [11 Packages 253 kB/796 kB 32%]                                                          Get:13 http://security.ubuntu.com/ubuntu xenial-security/universe i386 Packages [421 kB]
-I, [2020-04-23T12:42:24.318357 #48646]  INFO -- default-ubuntu-1604: 73% [6 Packages store 0 B] [11 Packages 253 kB/796 kB 32%] [13 Packages 0 B/421                                                                               81% [6 Packages store 0 B] [11 Packages 652 kB/796 kB 82%]                                                          Get:14 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en [200 kB]
-I, [2020-04-23T12:42:24.329815 #48646]  INFO -- default-ubuntu-1604: 81% [6 Packages store 0 B] [11 Packages 655 kB/796 kB 82%] [14 Translation-en 0                                                                               84% [6 Packages store 0 B] [11 Packages 739 kB/796 kB 93%]                                                          Get:15 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [5,728 B]
-I, [2020-04-23T12:42:24.331152 #48646]  INFO -- default-ubuntu-1604: 84% [6 Packages store 0 B] [11 Packages 739 kB/796 kB 93%] [15 Packages 0 B/5,7                                                                               84% [6 Packages store 0 B] [11 Packages 739 kB/796 kB 93%]                                                          Get:16 http://security.ubuntu.com/ubuntu xenial-security/multiverse i386 Packages [5,892 B]
-I, [2020-04-23T12:42:24.357036 #48646]  INFO -- default-ubuntu-1604: 84% [6 Packages store 0 B] [11 Packages 739 kB/796 kB 93%] [16 Packages 0 B/5,8                                                                               84% [6 Packages store 0 B] [11 Packages 739 kB/796 kB 93%]                                                          85% [6 Packages store 0 B]                          Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages [721 kB]
-I, [2020-04-23T12:42:24.436534 #48646]  INFO -- default-ubuntu-1604: 85% [6 Packages store 0 B] [17 Packages 0 B/721 kB 0%]                                                      93% [6 Packages store 0 B]                          Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en [333 kB]
-I, [2020-04-23T12:42:24.463096 #48646]  INFO -- default-ubuntu-1604: 94% [6 Packages store 0 B] [18 Translation-en 104 kB/333 kB 31%]                                                                Get:19 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [16.8 kB]
-I, [2020-04-23T12:42:24.465467 #48646]  INFO -- default-ubuntu-1604:                                                                 96% [6 Packages store 0 B] [19 Packages 12.2 kB/16.8 kB 73%]                                                            96% [6 Packages store 0 B]                          Get:20 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse i386 Packages [15.9 kB]
-I, [2020-04-23T12:42:25.458032 #48646]  INFO -- default-ubuntu-1604: 96% [6 Packages store 0 B] [20 Packages 0 B/15.9 kB 0%]                                                       96% [6 Packages store 0 B]                          97% [Working]97% [7 Packages store 0 B]                          97% [Working]97% [8 Packages store 0 B]                          97% [Working]97% [9 Translation-en store 0 B]                                97% [Working]97% [10 Translation-en store 0 B]                                 98% [Working]98% [12 Packages store 0 B]                           98% [Working]98% [13 Packages store 0 B]                           98% [Working]98% [14 Translation-en store 0 B]                                 98% [Working]98% [15 Packages store 0 B]                           99% [Working]99% [16 Packages store 0 B]                           99% [Working]99% [11 Packages store 0 B]                           99% [Working]99% [17 Packages store 0 B]                           99% [Working]99% [18 Translation-en store 0 B]                                 100% [Working]100% [19 Packages store 0 B]                            100% [Working]100% [20 Packages store 0 B]                            100% [Working]              Fetched 7,629 kB in 2s (2,876 kB/s)
-I, [2020-04-23T12:42:30.887441 #48646]  INFO -- default-ubuntu-1604: Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 3%Reading package lists... 3%Reading package lists... 7%Reading package lists... 7%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 32%Reading package lists... 32%Reading package lists... 38%Reading package lists... 54%Reading package lists... 54%Reading package lists... 66%Reading package lists... 66%Reading package lists... 67%Reading package lists... 67%Reading package lists... 67%Reading package lists... 67%Reading package lists... 67%Reading package lists... 67%Reading package lists... 72%Reading package lists... 72%Reading package lists... 75%Reading package lists... 75%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 82%Reading package lists... 82%Reading package lists... 84%Reading package lists... 84%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 89%Reading package lists... 89%Reading package lists... 91%Reading package lists... 91%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
-I, [2020-04-23T12:42:31.074150 #48646]  INFO -- default-ubuntu-1604: Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
-I, [2020-04-23T12:42:31.423433 #48646]  INFO -- default-ubuntu-1604: Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
-I, [2020-04-23T12:42:31.424932 #48646]  INFO -- default-ubuntu-1604: Reading state information... 0%Reading state information... 0%Reading state information... Done
-I, [2020-04-23T12:42:31.480111 #48646]  INFO -- default-ubuntu-1604: apt-utils is already the newest version (1.2.32).
-I, [2020-04-23T12:42:31.727524 #48646]  INFO -- default-ubuntu-1604: The following additional packages will be installed:
-I, [2020-04-23T12:42:31.729724 #48646]  INFO -- default-ubuntu-1604:   libassuan0 libksba8 libnpth0
-I, [2020-04-23T12:42:31.732904 #48646]  INFO -- default-ubuntu-1604: Suggested packages:
-I, [2020-04-23T12:42:31.733359 #48646]  INFO -- default-ubuntu-1604:   git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk
-I, [2020-04-23T12:42:31.733699 #48646]  INFO -- default-ubuntu-1604:   gitweb git-arch git-cvs git-mediawiki git-svn
-I, [2020-04-23T12:42:31.736605 #48646]  INFO -- default-ubuntu-1604: The following NEW packages will be installed:
-I, [2020-04-23T12:42:31.739166 #48646]  INFO -- default-ubuntu-1604:   dirmngr libassuan0 libksba8 libnpth0
-I, [2020-04-23T12:42:31.741147 #48646]  INFO -- default-ubuntu-1604: The following packages will be upgraded:
-I, [2020-04-23T12:42:31.743526 #48646]  INFO -- default-ubuntu-1604:   git
-I, [2020-04-23T12:42:31.757857 #48646]  INFO -- default-ubuntu-1604: 1 upgraded, 4 newly installed, 0 to remove and 38 not upgraded.
-I, [2020-04-23T12:42:31.783427 #48646]  INFO -- default-ubuntu-1604: Need to get 3,544 kB of archives.
-I, [2020-04-23T12:42:31.783992 #48646]  INFO -- default-ubuntu-1604: After this operation, 1,050 kB of additional disk space will be used.
-I, [2020-04-23T12:42:31.826550 #48646]  INFO -- default-ubuntu-1604: 0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libassuan0 amd64 2.4.2-2 [34.6 kB]
-I, [2020-04-23T12:42:31.857762 #48646]  INFO -- default-ubuntu-1604: 0% [1 libassuan0 0 B/34.6 kB 0%]                                5% [Working]            Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libksba8 amd64 1.3.3-1ubuntu0.16.04.1 [90.2 kB]
-I, [2020-04-23T12:42:31.900252 #48646]  INFO -- default-ubuntu-1604: 5% [2 libksba8 0 B/90.2 kB 0%]                              11% [Working]             Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 libnpth0 amd64 1.2-3 [7,998 B]
-I, [2020-04-23T12:42:31.906568 #48646]  INFO -- default-ubuntu-1604: 11% [3 libnpth0 0 B/7,998 B 0%]                               15% [Working]             Get:4 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 dirmngr amd64 2.1.11-6ubuntu2.1 [235 kB]
-I, [2020-04-23T12:42:32.047166 #48646]  INFO -- default-ubuntu-1604: 15% [4 dirmngr 0 B/235 kB 0%]                             24% [Working]             Get:5 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 git amd64 1:2.7.4-0ubuntu1.9 [3,176 kB]
-I, [2020-04-23T12:42:32.980315 #48646]  INFO -- default-ubuntu-1604: 24% [5 git 0 B/3,176 kB 0%]51% [5 git 1,186 kB/3,176 kB 37%]                                 100% [Working]              Fetched 3,544 kB in 1s (2,990 kB/s)
-I, [2020-04-23T12:42:33.253564 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package libassuan0:amd64.
-I, [2020-04-23T12:42:33.375503 #48646]  INFO -- default-ubuntu-1604: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38555 files and directories currently installed.)
-I, [2020-04-23T12:42:33.378019 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../libassuan0_2.4.2-2_amd64.deb ...
-I, [2020-04-23T12:42:33.385723 #48646]  INFO -- default-ubuntu-1604: Unpacking libassuan0:amd64 (2.4.2-2) ...
-I, [2020-04-23T12:42:33.416839 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package libksba8:amd64.
-I, [2020-04-23T12:42:33.422959 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../libksba8_1.3.3-1ubuntu0.16.04.1_amd64.deb ...
-I, [2020-04-23T12:42:33.426655 #48646]  INFO -- default-ubuntu-1604: Unpacking libksba8:amd64 (1.3.3-1ubuntu0.16.04.1) ...
-I, [2020-04-23T12:42:33.468150 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package libnpth0:amd64.
-I, [2020-04-23T12:42:33.472584 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../libnpth0_1.2-3_amd64.deb ...
-I, [2020-04-23T12:42:33.475598 #48646]  INFO -- default-ubuntu-1604: Unpacking libnpth0:amd64 (1.2-3) ...
-I, [2020-04-23T12:42:33.512317 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package dirmngr.
-I, [2020-04-23T12:42:33.517035 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../dirmngr_2.1.11-6ubuntu2.1_amd64.deb ...
-I, [2020-04-23T12:42:33.532195 #48646]  INFO -- default-ubuntu-1604: Unpacking dirmngr (2.1.11-6ubuntu2.1) ...
-I, [2020-04-23T12:42:33.611814 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../git_1%3a2.7.4-0ubuntu1.9_amd64.deb ...
-I, [2020-04-23T12:42:33.631692 #48646]  INFO -- default-ubuntu-1604: Unpacking git (1:2.7.4-0ubuntu1.9) over (1:2.7.4-0ubuntu1.7) ...
-I, [2020-04-23T12:42:34.280741 #48646]  INFO -- default-ubuntu-1604: Processing triggers for libc-bin (2.23-0ubuntu11) ...
-I, [2020-04-23T12:42:34.402201 #48646]  INFO -- default-ubuntu-1604: Processing triggers for man-db (2.7.5-1) ...
-I, [2020-04-23T12:42:40.662389 #48646]  INFO -- default-ubuntu-1604: Setting up libassuan0:amd64 (2.4.2-2) ...
-I, [2020-04-23T12:42:40.673744 #48646]  INFO -- default-ubuntu-1604: Setting up libksba8:amd64 (1.3.3-1ubuntu0.16.04.1) ...
-I, [2020-04-23T12:42:40.680080 #48646]  INFO -- default-ubuntu-1604: Setting up libnpth0:amd64 (1.2-3) ...
-I, [2020-04-23T12:42:40.686634 #48646]  INFO -- default-ubuntu-1604: Setting up dirmngr (2.1.11-6ubuntu2.1) ...
-I, [2020-04-23T12:42:40.705842 #48646]  INFO -- default-ubuntu-1604: Setting up git (1:2.7.4-0ubuntu1.9) ...
-I, [2020-04-23T12:42:40.731007 #48646]  INFO -- default-ubuntu-1604: Processing triggers for libc-bin (2.23-0ubuntu11) ...
-I, [2020-04-23T12:42:42.366119 #48646]  INFO -- default-ubuntu-1604: Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
-I, [2020-04-23T12:42:42.682814 #48646]  INFO -- default-ubuntu-1604: Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
-I, [2020-04-23T12:42:42.683961 #48646]  INFO -- default-ubuntu-1604: Reading state information... 0%Reading state information... 0%Reading state information... Done
-I, [2020-04-23T12:42:42.738655 #48646]  INFO -- default-ubuntu-1604: software-properties-common is already the newest version (0.96.20.9).
-I, [2020-04-23T12:42:43.004755 #48646]  INFO -- default-ubuntu-1604: 0 upgraded, 0 newly installed, 0 to remove and 38 not upgraded.
-I, [2020-04-23T12:42:43.009994 #48646]  INFO -- default-ubuntu-1604: bash: line 87: [apt-cache: command not found
-I, [2020-04-23T12:42:43.498719 #48646]  INFO -- default-ubuntu-1604: gpg: keyring `/tmp/tmpfxxue6q_/secring.gpg' created
-I, [2020-04-23T12:42:43.499833 #48646]  INFO -- default-ubuntu-1604: gpg: keyring `/tmp/tmpfxxue6q_/pubring.gpg' created
-I, [2020-04-23T12:42:43.500881 #48646]  INFO -- default-ubuntu-1604: gpg: requesting key 7BB9C367 from hkp server keyserver.ubuntu.com
-I, [2020-04-23T12:42:43.539374 #48646]  INFO -- default-ubuntu-1604: gpg: /tmp/tmpfxxue6q_/trustdb.gpg: trustdb created
-I, [2020-04-23T12:42:43.540364 #48646]  INFO -- default-ubuntu-1604: gpg: key 7BB9C367: public key "Launchpad PPA for Ansible, Inc." imported
-I, [2020-04-23T12:42:43.541610 #48646]  INFO -- default-ubuntu-1604: gpg: Total number processed: 1
-I, [2020-04-23T12:42:43.542472 #48646]  INFO -- default-ubuntu-1604: gpg:               imported: 1  (RSA: 1)
-I, [2020-04-23T12:42:43.611010 #48646]  INFO -- default-ubuntu-1604: OK
-I, [2020-04-23T12:42:43.700203 #48646]  INFO -- default-ubuntu-1604: 0% [Working]            Get:1 http://ppa.launchpad.net/ansible/ansible/ubuntu xenial InRelease [18.0 kB]
-I, [2020-04-23T12:42:43.712408 #48646]  INFO -- default-ubuntu-1604: 0% [Waiting for headers] [Connecting to security.ubuntu.com (91.189.91.39)] [1                                                                                Hit:2 http://archive.ubuntu.com/ubuntu xenial InRelease
-I, [2020-04-23T12:42:43.714191 #48646]  INFO -- default-ubuntu-1604: 0% [Connecting to security.ubuntu.com (91.189.91.39)] [1 InRelease 18.0 kB/18.0                                                                               Hit:3 http://archive.ubuntu.com/ubuntu xenial-updates InRelease
-I, [2020-04-23T12:42:43.722016 #48646]  INFO -- default-ubuntu-1604:                                                                                0% [Waiting for headers] [Connecting to security.ubuntu.com (91.189.91.39)]0% [2 InRelease gpgv 247 kB] [Waiting for headers] [Connecting to security.ubun                                                                               Hit:4 http://archive.ubuntu.com/ubuntu xenial-backports InRelease
-I, [2020-04-23T12:42:43.839614 #48646]  INFO -- default-ubuntu-1604: 0% [2 InRelease gpgv 247 kB] [Connecting to security.ubuntu.com (91.189.91.39)]                                                                               0% [Waiting for headers]0% [3 InRelease gpgv 109 kB] [Waiting for headers]                                                  Hit:5 http://security.ubuntu.com/ubuntu xenial-security InRelease
-I, [2020-04-23T12:42:44.037085 #48646]  INFO -- default-ubuntu-1604:                                                   0% [3 InRelease gpgv 109 kB]                            0% [Working]0% [1 InRelease gpgv 18.0 kB]                             0% [Working]0% [4 InRelease gpgv 107 kB] [Connecting to ppa.launchpad.net (91.189.95.83)]                                                                             0% [Connecting to ppa.launchpad.net (91.189.95.83)]0% [5 InRelease gpgv 109 kB] [Connecting to ppa.launchpad.net (91.189.95.83)]                                                                             Get:6 http://ppa.launchpad.net/ansible/ansible/ubuntu xenial/main amd64 Packages [692 B]
-I, [2020-04-23T12:42:44.066057 #48646]  INFO -- default-ubuntu-1604:                                                                              0% [5 InRelease gpgv 109 kB]0% [6 Packages store 0 B] [5 InRelease gpgv 109 kB] [Connecting to ppa.launchpa                                                                               0% [5 InRelease gpgv 109 kB] [Connecting to ppa.launchpad.net (91.189.95.83)]                                                                             Get:7 http://ppa.launchpad.net/ansible/ansible/ubuntu xenial/main i386 Packages [692 B]
-I, [2020-04-23T12:42:44.081895 #48646]  INFO -- default-ubuntu-1604: 0% [5 InRelease gpgv 109 kB] [Connecting to ppa.launchpad.net (91.189.95.83)]0% [5 InRelease gpgv 109 kB] [Connecting to ppa.launchpad.net (91.189.95.83)]                                                                             Get:8 http://ppa.launchpad.net/ansible/ansible/ubuntu xenial/main Translation-en [472 B]
-I, [2020-04-23T12:42:44.110091 #48646]  INFO -- default-ubuntu-1604:                                                                              0% [5 InRelease gpgv 109 kB]0% [5 InRelease gpgv 109 kB]                            100% [Working]              Fetched 19.9 kB in 0s (44.8 kB/s)
-I, [2020-04-23T12:42:49.385151 #48646]  INFO -- default-ubuntu-1604: Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 3%Reading package lists... 3%Reading package lists... 7%Reading package lists... 7%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 32%Reading package lists... 32%Reading package lists... 39%Reading package lists... 54%Reading package lists... 54%Reading package lists... 66%Reading package lists... 66%Reading package lists... 67%Reading package lists... 67%Reading package lists... 67%Reading package lists... 67%Reading package lists... 67%Reading package lists... 67%Reading package lists... 72%Reading package lists... 72%Reading package lists... 75%Reading package lists... 75%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 82%Reading package lists... 82%Reading package lists... 84%Reading package lists... 84%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 88%Reading package lists... 89%Reading package lists... 89%Reading package lists... 91%Reading package lists... 91%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
-I, [2020-04-23T12:42:49.515160 #48646]  INFO -- default-ubuntu-1604: Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
-I, [2020-04-23T12:42:49.833426 #48646]  INFO -- default-ubuntu-1604: Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
-I, [2020-04-23T12:42:49.834528 #48646]  INFO -- default-ubuntu-1604: Reading state information... 0%Reading state information... 0%Reading state information... Done
-I, [2020-04-23T12:42:50.122762 #48646]  INFO -- default-ubuntu-1604: The following additional packages will be installed:
-I, [2020-04-23T12:42:50.123846 #48646]  INFO -- default-ubuntu-1604:   libyaml-0-2 python-cffi-backend python-cryptography python-ecdsa
-I, [2020-04-23T12:42:50.124452 #48646]  INFO -- default-ubuntu-1604:   python-enum34 python-httplib2 python-idna python-ipaddress python-jinja2
-I, [2020-04-23T12:42:50.125115 #48646]  INFO -- default-ubuntu-1604:   python-markupsafe python-paramiko python-pkg-resources python-pyasn1
-I, [2020-04-23T12:42:50.126356 #48646]  INFO -- default-ubuntu-1604:   python-setuptools python-six python-yaml sshpass
-I, [2020-04-23T12:42:50.129693 #48646]  INFO -- default-ubuntu-1604: Suggested packages:
-I, [2020-04-23T12:42:50.130195 #48646]  INFO -- default-ubuntu-1604:   python-cryptography-doc python-cryptography-vectors python-enum34-doc
-I, [2020-04-23T12:42:50.130579 #48646]  INFO -- default-ubuntu-1604:   python-jinja2-doc doc-base python-setuptools-doc
-I, [2020-04-23T12:42:50.133372 #48646]  INFO -- default-ubuntu-1604: The following NEW packages will be installed:
-I, [2020-04-23T12:42:50.135978 #48646]  INFO -- default-ubuntu-1604:   ansible libyaml-0-2 python-cffi-backend python-cryptography python-ecdsa
-I, [2020-04-23T12:42:50.136477 #48646]  INFO -- default-ubuntu-1604:   python-enum34 python-httplib2 python-idna python-ipaddress python-jinja2
-I, [2020-04-23T12:42:50.136765 #48646]  INFO -- default-ubuntu-1604:   python-markupsafe python-paramiko python-pkg-resources python-pyasn1
-I, [2020-04-23T12:42:50.137709 #48646]  INFO -- default-ubuntu-1604:   python-setuptools python-six python-yaml sshpass
-I, [2020-04-23T12:42:50.155074 #48646]  INFO -- default-ubuntu-1604: 0 upgraded, 18 newly installed, 0 to remove and 38 not upgraded.
-I, [2020-04-23T12:42:50.186582 #48646]  INFO -- default-ubuntu-1604: Need to get 6,934 kB of archives.
-I, [2020-04-23T12:42:50.187030 #48646]  INFO -- default-ubuntu-1604: After this operation, 64.2 MB of additional disk space will be used.
-I, [2020-04-23T12:42:50.222582 #48646]  INFO -- default-ubuntu-1604: 0% [Working]            Get:1 http://ppa.launchpad.net/ansible/ansible/ubuntu xenial/main amd64 ansible all 2.9.7-1ppa~xenial [5,791 kB]
-I, [2020-04-23T12:42:50.225983 #48646]  INFO -- default-ubuntu-1604: 0% [Waiting for headers] [1 ansible 2,582 B/5,791 kB 0%]                                                        Get:2 http://archive.ubuntu.com/ubuntu xenial/main amd64 libyaml-0-2 amd64 0.1.6-3 [47.6 kB]
-I, [2020-04-23T12:42:50.301462 #48646]  INFO -- default-ubuntu-1604: 0% [2 libyaml-0-2 0 B/47.6 kB 0%] [1 ansible 14.0 kB/5,791 kB 0%]                                                                 2% [1 ansible 58.3 kB/5,791 kB 1%]                                  Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 python-markupsafe amd64 0.23-2build2 [15.5 kB]
-I, [2020-04-23T12:42:50.310451 #48646]  INFO -- default-ubuntu-1604: 3% [3 python-markupsafe 0 B/15.5 kB 0%] [1 ansible 104 kB/5,791 kB 2%]                                                                      4% [1 ansible 110 kB/5,791 kB 2%]                                 Get:4 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-jinja2 all 2.8-1ubuntu0.1 [106 kB]
-I, [2020-04-23T12:42:50.409355 #48646]  INFO -- default-ubuntu-1604: 4% [4 python-jinja2 0 B/106 kB 0%] [1 ansible 110 kB/5,791 kB 2%]                                                                 7% [1 ansible 180 kB/5,791 kB 3%]                                 Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 python-yaml amd64 3.11-3build1 [105 kB]
-I, [2020-04-23T12:42:50.501878 #48646]  INFO -- default-ubuntu-1604: 7% [5 python-yaml 0 B/105 kB 0%] [1 ansible 181 kB/5,791 kB 3%]                                                               10% [1 ansible 241 kB/5,791 kB 4%]                                  Get:6 http://archive.ubuntu.com/ubuntu xenial/main amd64 python-six all 1.10.0-3 [10.9 kB]
-I, [2020-04-23T12:42:50.511185 #48646]  INFO -- default-ubuntu-1604: 10% [6 python-six 0 B/10.9 kB 0%] [1 ansible 244 kB/5,791 kB 4%]                                                                12% [1 ansible 248 kB/5,791 kB 4%]                                  Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-ecdsa all 0.13-2ubuntu0.16.04.1 [36.2 kB]
-I, [2020-04-23T12:42:50.557328 #48646]  INFO -- default-ubuntu-1604: 12% [7 python-ecdsa 0 B/36.2 kB 0%] [1 ansible 250 kB/5,791 kB 4%]                                                                  14% [1 ansible 291 kB/5,791 kB 5%]                                  Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-paramiko all 1.16.0-1ubuntu0.2 [110 kB]
-I, [2020-04-23T12:42:50.691073 #48646]  INFO -- default-ubuntu-1604: 14% [8 python-paramiko 0 B/110 kB 0%] [1 ansible 294 kB/5,791 kB 5%]                                                                    17% [1 ansible 408 kB/5,791 kB 7%]                                  Get:9 http://archive.ubuntu.com/ubuntu xenial/main amd64 python-httplib2 all 0.9.1+dfsg-1 [34.2 kB]
-I, [2020-04-23T12:42:50.732443 #48646]  INFO -- default-ubuntu-1604: 17% [9 python-httplib2 0 B/34.2 kB 0%] [1 ansible 410 kB/5,791 kB 7%]                                                                     19% [1 ansible 447 kB/5,791 kB 8%]                                  Get:10 http://archive.ubuntu.com/ubuntu xenial/main amd64 python-pkg-resources all 20.7.0-1 [108 kB]
-I, [2020-04-23T12:42:50.839399 #48646]  INFO -- default-ubuntu-1604: 19% [10 python-pkg-resources 0 B/108 kB 0%] [1 ansible 447 kB/5,791 kB 8%]                                                                          23% [1 ansible 534 kB/5,791 kB 9%]                                  Get:11 http://archive.ubuntu.com/ubuntu xenial/main amd64 python-setuptools all 20.7.0-1 [169 kB]
-I, [2020-04-23T12:42:50.967028 #48646]  INFO -- default-ubuntu-1604: 23% [11 python-setuptools 0 B/169 kB 0%] [1 ansible 534 kB/5,791 kB 9%]                                                                       28% [1 ansible 685 kB/5,791 kB 12%]                                   Get:12 http://archive.ubuntu.com/ubuntu xenial/universe amd64 sshpass amd64 1.05-1 [10.5 kB]
-I, [2020-04-23T12:42:50.972907 #48646]  INFO -- default-ubuntu-1604: 28% [12 sshpass 0 B/10.5 kB 0%] [1 ansible 685 kB/5,791 kB 12%]                                                               29% [1 ansible 694 kB/5,791 kB 12%]                                   Get:13 http://archive.ubuntu.com/ubuntu xenial/main amd64 python-cffi-backend amd64 1.5.2-1ubuntu1 [58.1 kB]
-I, [2020-04-23T12:42:50.999458 #48646]  INFO -- default-ubuntu-1604: 29% [13 python-cffi-backend 0 B/58.1 kB 0%] [1 ansible 694 kB/5,791 kB 12%]                                                                           31% [1 ansible 732 kB/5,791 kB 13%]                                   Get:14 http://archive.ubuntu.com/ubuntu xenial/main amd64 python-enum34 all 1.1.2-1 [35.8 kB]
-I, [2020-04-23T12:42:51.016405 #48646]  INFO -- default-ubuntu-1604: 31% [14 python-enum34 0 B/35.8 kB 0%] [1 ansible 732 kB/5,791 kB 13%]                                                                     33% [1 ansible 755 kB/5,791 kB 13%]                                   Get:15 http://archive.ubuntu.com/ubuntu xenial/main amd64 python-idna all 2.0-3 [35.1 kB]
-I, [2020-04-23T12:42:51.036853 #48646]  INFO -- default-ubuntu-1604: 33% [15 python-idna 0 B/35.1 kB 0%] [1 ansible 758 kB/5,791 kB 13%]                                                                   35% [1 ansible 785 kB/5,791 kB 14%]                                   Get:16 http://archive.ubuntu.com/ubuntu xenial/main amd64 python-ipaddress all 1.0.16-1 [18.0 kB]
-I, [2020-04-23T12:42:51.049189 #48646]  INFO -- default-ubuntu-1604: 35% [16 python-ipaddress 0 B/18.0 kB 0%] [1 ansible 791 kB/5,791 kB 14%]                                                                        36% [1 ansible 814 kB/5,791 kB 14%]                                   Get:17 http://archive.ubuntu.com/ubuntu xenial/main amd64 python-pyasn1 all 0.1.9-1 [45.1 kB]
-I, [2020-04-23T12:42:51.062372 #48646]  INFO -- default-ubuntu-1604: 36% [17 python-pyasn1 0 B/45.1 kB 0%] [1 ansible 817 kB/5,791 kB 14%]                                                                     38% [1 ansible 834 kB/5,791 kB 14%]                                   Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-cryptography amd64 1.2.3-1ubuntu0.2 [199 kB]
-I, [2020-04-23T12:42:52.259696 #48646]  INFO -- default-ubuntu-1604: 38% [18 python-cryptography 0 B/199 kB 0%] [1 ansible 837 kB/5,791 kB 14%]                                                                          44% [1 ansible 998 kB/5,791 kB 17%]56% [1 ansible 2,073 kB/5,791 kB 36%]89% [1 ansible 4,903 kB/5,791 kB 85%]                                     100% [Working]              Fetched 6,934 kB in 2s (3,357 kB/s)
-I, [2020-04-23T12:42:52.481674 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package libyaml-0-2:amd64.
-I, [2020-04-23T12:42:52.503642 #48646]  INFO -- default-ubuntu-1604: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38590 files and directories currently installed.)
-I, [2020-04-23T12:42:52.506180 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../libyaml-0-2_0.1.6-3_amd64.deb ...
-I, [2020-04-23T12:42:52.509830 #48646]  INFO -- default-ubuntu-1604: Unpacking libyaml-0-2:amd64 (0.1.6-3) ...
-I, [2020-04-23T12:42:52.542978 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package python-markupsafe.
-I, [2020-04-23T12:42:52.553714 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../python-markupsafe_0.23-2build2_amd64.deb ...
-I, [2020-04-23T12:42:52.557845 #48646]  INFO -- default-ubuntu-1604: Unpacking python-markupsafe (0.23-2build2) ...
-I, [2020-04-23T12:42:52.590251 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package python-jinja2.
-I, [2020-04-23T12:42:52.597412 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../python-jinja2_2.8-1ubuntu0.1_all.deb ...
-I, [2020-04-23T12:42:52.604490 #48646]  INFO -- default-ubuntu-1604: Unpacking python-jinja2 (2.8-1ubuntu0.1) ...
-I, [2020-04-23T12:42:52.672523 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package python-yaml.
-I, [2020-04-23T12:42:52.676837 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../python-yaml_3.11-3build1_amd64.deb ...
-I, [2020-04-23T12:42:52.680038 #48646]  INFO -- default-ubuntu-1604: Unpacking python-yaml (3.11-3build1) ...
-I, [2020-04-23T12:42:52.730991 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package python-six.
-I, [2020-04-23T12:42:52.738499 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../python-six_1.10.0-3_all.deb ...
-I, [2020-04-23T12:42:52.742121 #48646]  INFO -- default-ubuntu-1604: Unpacking python-six (1.10.0-3) ...
-I, [2020-04-23T12:42:52.771478 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package python-ecdsa.
-I, [2020-04-23T12:42:52.776394 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../python-ecdsa_0.13-2ubuntu0.16.04.1_all.deb ...
-I, [2020-04-23T12:42:52.779889 #48646]  INFO -- default-ubuntu-1604: Unpacking python-ecdsa (0.13-2ubuntu0.16.04.1) ...
-I, [2020-04-23T12:42:52.824581 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package python-paramiko.
-I, [2020-04-23T12:42:52.831784 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../python-paramiko_1.16.0-1ubuntu0.2_all.deb ...
-I, [2020-04-23T12:42:52.838376 #48646]  INFO -- default-ubuntu-1604: Unpacking python-paramiko (1.16.0-1ubuntu0.2) ...
-I, [2020-04-23T12:42:52.902424 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package python-httplib2.
-I, [2020-04-23T12:42:52.906630 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../python-httplib2_0.9.1+dfsg-1_all.deb ...
-I, [2020-04-23T12:42:52.910200 #48646]  INFO -- default-ubuntu-1604: Unpacking python-httplib2 (0.9.1+dfsg-1) ...
-I, [2020-04-23T12:42:52.940669 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package python-pkg-resources.
-I, [2020-04-23T12:42:52.945048 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../python-pkg-resources_20.7.0-1_all.deb ...
-I, [2020-04-23T12:42:52.949513 #48646]  INFO -- default-ubuntu-1604: Unpacking python-pkg-resources (20.7.0-1) ...
-I, [2020-04-23T12:42:52.997940 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package python-setuptools.
-I, [2020-04-23T12:42:53.002782 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../python-setuptools_20.7.0-1_all.deb ...
-I, [2020-04-23T12:42:53.005978 #48646]  INFO -- default-ubuntu-1604: Unpacking python-setuptools (20.7.0-1) ...
-I, [2020-04-23T12:42:53.078559 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package sshpass.
-I, [2020-04-23T12:42:53.082479 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../sshpass_1.05-1_amd64.deb ...
-I, [2020-04-23T12:42:53.086063 #48646]  INFO -- default-ubuntu-1604: Unpacking sshpass (1.05-1) ...
-I, [2020-04-23T12:42:53.110760 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package python-cffi-backend.
-I, [2020-04-23T12:42:53.116291 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../python-cffi-backend_1.5.2-1ubuntu1_amd64.deb ...
-I, [2020-04-23T12:42:53.120208 #48646]  INFO -- default-ubuntu-1604: Unpacking python-cffi-backend (1.5.2-1ubuntu1) ...
-I, [2020-04-23T12:42:53.159543 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package python-enum34.
-I, [2020-04-23T12:42:53.164889 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../python-enum34_1.1.2-1_all.deb ...
-I, [2020-04-23T12:42:53.169250 #48646]  INFO -- default-ubuntu-1604: Unpacking python-enum34 (1.1.2-1) ...
-I, [2020-04-23T12:42:53.210188 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package python-idna.
-I, [2020-04-23T12:42:53.214191 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../python-idna_2.0-3_all.deb ...
-I, [2020-04-23T12:42:53.219228 #48646]  INFO -- default-ubuntu-1604: Unpacking python-idna (2.0-3) ...
-I, [2020-04-23T12:42:53.261244 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package python-ipaddress.
-I, [2020-04-23T12:42:53.265952 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../python-ipaddress_1.0.16-1_all.deb ...
-I, [2020-04-23T12:42:53.269803 #48646]  INFO -- default-ubuntu-1604: Unpacking python-ipaddress (1.0.16-1) ...
-I, [2020-04-23T12:42:53.306874 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package python-pyasn1.
-I, [2020-04-23T12:42:53.310946 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../python-pyasn1_0.1.9-1_all.deb ...
-I, [2020-04-23T12:42:53.315795 #48646]  INFO -- default-ubuntu-1604: Unpacking python-pyasn1 (0.1.9-1) ...
-I, [2020-04-23T12:42:53.378629 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package python-cryptography.
-I, [2020-04-23T12:42:53.382866 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../python-cryptography_1.2.3-1ubuntu0.2_amd64.deb ...
-I, [2020-04-23T12:42:53.387082 #48646]  INFO -- default-ubuntu-1604: Unpacking python-cryptography (1.2.3-1ubuntu0.2) ...
-I, [2020-04-23T12:42:53.483633 #48646]  INFO -- default-ubuntu-1604: Selecting previously unselected package ansible.
-I, [2020-04-23T12:42:53.487983 #48646]  INFO -- default-ubuntu-1604: Preparing to unpack .../ansible_2.9.7-1ppa~xenial_all.deb ...
-I, [2020-04-23T12:42:53.491824 #48646]  INFO -- default-ubuntu-1604: Unpacking ansible (2.9.7-1ppa~xenial) ...
-I, [2020-04-23T12:42:56.829672 #48646]  INFO -- default-ubuntu-1604: Processing triggers for man-db (2.7.5-1) ...
-I, [2020-04-23T12:42:57.025395 #48646]  INFO -- default-ubuntu-1604: Setting up libyaml-0-2:amd64 (0.1.6-3) ...
-I, [2020-04-23T12:42:57.040987 #48646]  INFO -- default-ubuntu-1604: Setting up python-markupsafe (0.23-2build2) ...
-I, [2020-04-23T12:42:57.152654 #48646]  INFO -- default-ubuntu-1604: Setting up python-jinja2 (2.8-1ubuntu0.1) ...
-I, [2020-04-23T12:42:57.272778 #48646]  INFO -- default-ubuntu-1604: Setting up python-yaml (3.11-3build1) ...
-I, [2020-04-23T12:42:57.372420 #48646]  INFO -- default-ubuntu-1604: Setting up python-six (1.10.0-3) ...
-I, [2020-04-23T12:42:57.448160 #48646]  INFO -- default-ubuntu-1604: Setting up python-ecdsa (0.13-2ubuntu0.16.04.1) ...
-I, [2020-04-23T12:42:57.543204 #48646]  INFO -- default-ubuntu-1604: Setting up python-paramiko (1.16.0-1ubuntu0.2) ...
-I, [2020-04-23T12:42:57.678995 #48646]  INFO -- default-ubuntu-1604: Setting up python-httplib2 (0.9.1+dfsg-1) ...
-I, [2020-04-23T12:42:57.771404 #48646]  INFO -- default-ubuntu-1604: Setting up python-pkg-resources (20.7.0-1) ...
-I, [2020-04-23T12:42:57.888803 #48646]  INFO -- default-ubuntu-1604: Setting up python-setuptools (20.7.0-1) ...
-I, [2020-04-23T12:42:58.022283 #48646]  INFO -- default-ubuntu-1604: Setting up sshpass (1.05-1) ...
-I, [2020-04-23T12:42:58.031494 #48646]  INFO -- default-ubuntu-1604: Setting up python-cffi-backend (1.5.2-1ubuntu1) ...
-I, [2020-04-23T12:42:58.039848 #48646]  INFO -- default-ubuntu-1604: Setting up python-enum34 (1.1.2-1) ...
-I, [2020-04-23T12:42:58.126002 #48646]  INFO -- default-ubuntu-1604: Setting up python-idna (2.0-3) ...
-I, [2020-04-23T12:42:58.262025 #48646]  INFO -- default-ubuntu-1604: Setting up python-ipaddress (1.0.16-1) ...
-I, [2020-04-23T12:42:58.341069 #48646]  INFO -- default-ubuntu-1604: Setting up python-pyasn1 (0.1.9-1) ...
-I, [2020-04-23T12:42:58.439635 #48646]  INFO -- default-ubuntu-1604: Setting up python-cryptography (1.2.3-1ubuntu0.2) ...
-I, [2020-04-23T12:42:58.577130 #48646]  INFO -- default-ubuntu-1604: Setting up ansible (2.9.7-1ppa~xenial) ...
-I, [2020-04-23T12:43:04.066899 #48646]  INFO -- default-ubuntu-1604: Processing triggers for libc-bin (2.23-0ubuntu11) ...
-I, [2020-04-23T12:43:05.995226 #48646]  INFO -- default-ubuntu-1604: -----> Installing Chef Omnibus to install busser to run tests
-I, [2020-04-23T12:43:05.995684 #48646]  INFO -- default-ubuntu-1604: downloading https://www.chef.io/chef/install.sh
-I, [2020-04-23T12:43:05.996047 #48646]  INFO -- default-ubuntu-1604:   to file /tmp/install.sh
-I, [2020-04-23T12:43:05.996691 #48646]  INFO -- default-ubuntu-1604: trying wget...
-I, [2020-04-23T12:43:18.412833 #48646]  INFO -- default-ubuntu-1604: Transferring files to <default-ubuntu-1604>
-I, [2020-04-23T12:43:19.200624 #48646]  INFO -- default-ubuntu-1604: [0;35m[DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to [0m
-I, [2020-04-23T12:43:19.204133 #48646]  INFO -- default-ubuntu-1604: [0;35mallow bad characters in group names by default, this will change, but still be [0m
-I, [2020-04-23T12:43:19.204471 #48646]  INFO -- default-ubuntu-1604: [0;35muser configurable on deprecation. This feature will be removed in version 2.10.[0m
-I, [2020-04-23T12:43:19.204799 #48646]  INFO -- default-ubuntu-1604: [0;35m Deprecation warnings can be disabled by setting deprecation_warnings=False in [0m
-I, [2020-04-23T12:43:19.205102 #48646]  INFO -- default-ubuntu-1604: [0;35mansible.cfg.[0m
-I, [2020-04-23T12:43:19.205417 #48646]  INFO -- default-ubuntu-1604: [1;35m[WARNING]: Invalid characters were found in group names but not replaced, use[0m
-I, [2020-04-23T12:43:19.205683 #48646]  INFO -- default-ubuntu-1604: [1;35m-vvvv to see details[0m
-I, [2020-04-23T12:43:19.504238 #48646]  INFO -- default-ubuntu-1604: [1;35m[WARNING]: Found variable using reserved name: port[0m
-I, [2020-04-23T12:43:19.506164 #48646]  INFO -- default-ubuntu-1604: 
-I, [2020-04-23T12:43:19.506549 #48646]  INFO -- default-ubuntu-1604: PLAY [all] *********************************************************************
-I, [2020-04-23T12:43:19.518062 #48646]  INFO -- default-ubuntu-1604: 
-I, [2020-04-23T12:43:19.518865 #48646]  INFO -- default-ubuntu-1604: TASK [Gathering Facts] *********************************************************
-I, [2020-04-23T12:43:22.314460 #48646]  INFO -- default-ubuntu-1604: [0;35m[DEPRECATION WARNING]: Distribution Ubuntu 16.04 on host localhost should use [0m
-I, [2020-04-23T12:43:22.314840 #48646]  INFO -- default-ubuntu-1604: [0;35m/usr/bin/python3, but is using /usr/bin/python for backward compatibility with [0m
-I, [2020-04-23T12:43:22.315307 #48646]  INFO -- default-ubuntu-1604: [0;35mprior Ansible releases. A future Ansible release will default to using the [0m
-I, [2020-04-23T12:43:22.315700 #48646]  INFO -- default-ubuntu-1604: [0;35mdiscovered platform python for this host. See https://docs.ansible.com/ansible/[0m
-I, [2020-04-23T12:43:22.316182 #48646]  INFO -- default-ubuntu-1604: [0;35m2.9/reference_appendices/interpreter_discovery.html for more information. This [0m
-I, [2020-04-23T12:43:22.316579 #48646]  INFO -- default-ubuntu-1604: [0;35mfeature will be removed in version 2.12. Deprecation warnings can be disabled [0m
-I, [2020-04-23T12:43:22.316898 #48646]  INFO -- default-ubuntu-1604: [0;35mby setting deprecation_warnings=False in ansible.cfg.[0m
-I, [2020-04-23T12:43:22.317607 #48646]  INFO -- default-ubuntu-1604: [0;32mok: [localhost][0m
-I, [2020-04-23T12:43:22.390796 #48646]  INFO -- default-ubuntu-1604: 
-I, [2020-04-23T12:43:22.392146 #48646]  INFO -- default-ubuntu-1604: TASK [mongodb : Update source lists] *******************************************
-I, [2020-04-23T12:43:31.327100 #48646]  INFO -- default-ubuntu-1604: [1;35m[WARNING]: Updating cache and auto-installing missing dependency: python-apt[0m
-I, [2020-04-23T12:43:31.327447 #48646]  INFO -- default-ubuntu-1604: [0;33mchanged: [localhost][0m
-I, [2020-04-23T12:43:31.393896 #48646]  INFO -- default-ubuntu-1604: 
-I, [2020-04-23T12:43:31.394340 #48646]  INFO -- default-ubuntu-1604: TASK [mongodb : Upgrade all apt packages] **************************************
-I, [2020-04-23T12:44:52.908390 #48646]  INFO -- default-ubuntu-1604: [0;33mchanged: [localhost][0m
-I, [2020-04-23T12:44:53.112181 #48646]  INFO -- default-ubuntu-1604: 
-I, [2020-04-23T12:44:53.112536 #48646]  INFO -- default-ubuntu-1604: TASK [mongodb : add MongoDB key] ***********************************************
-I, [2020-04-23T12:44:54.017697 #48646]  INFO -- default-ubuntu-1604: [0;33mchanged: [localhost][0m
-I, [2020-04-23T12:44:54.083170 #48646]  INFO -- default-ubuntu-1604: 
-I, [2020-04-23T12:44:54.083482 #48646]  INFO -- default-ubuntu-1604: TASK [mongodb : Add MongoDB Repository] ****************************************
-I, [2020-04-23T12:45:02.877723 #48646]  INFO -- default-ubuntu-1604: [0;33mchanged: [localhost][0m
-I, [2020-04-23T12:45:02.947269 #48646]  INFO -- default-ubuntu-1604: 
-I, [2020-04-23T12:45:02.947641 #48646]  INFO -- default-ubuntu-1604: TASK [mongodb : Install MongoDB] ***********************************************
-I, [2020-04-23T12:45:34.356158 #48646]  INFO -- default-ubuntu-1604: [0;33mchanged: [localhost][0m
-I, [2020-04-23T12:45:34.441064 #48646]  INFO -- default-ubuntu-1604: 
-I, [2020-04-23T12:45:34.441426 #48646]  INFO -- default-ubuntu-1604: TASK [mongodb : copy mongod.service file] **************************************
-I, [2020-04-23T12:45:35.177367 #48646]  INFO -- default-ubuntu-1604: [0;33mchanged: [localhost][0m
-I, [2020-04-23T12:45:35.245257 #48646]  INFO -- default-ubuntu-1604: 
-I, [2020-04-23T12:45:35.246283 #48646]  INFO -- default-ubuntu-1604: TASK [mongodb : template mongod.conf file] *************************************
-I, [2020-04-23T12:45:35.571219 #48646]  INFO -- default-ubuntu-1604: [0;33mchanged: [localhost][0m
-I, [2020-04-23T12:45:35.572611 #48646]  INFO -- default-ubuntu-1604: 
-I, [2020-04-23T12:45:35.572910 #48646]  INFO -- default-ubuntu-1604: RUNNING HANDLER [mongodb : start mongodb] **************************************
-I, [2020-04-23T12:45:36.437009 #48646]  INFO -- default-ubuntu-1604: [0;33mchanged: [localhost][0m
-I, [2020-04-23T12:45:36.440799 #48646]  INFO -- default-ubuntu-1604: 
-I, [2020-04-23T12:45:36.444715 #48646]  INFO -- default-ubuntu-1604: RUNNING HANDLER [mongodb : restart mongodb] ************************************
-I, [2020-04-23T12:45:37.138399 #48646]  INFO -- default-ubuntu-1604: [0;33mchanged: [localhost][0m
-I, [2020-04-23T12:45:37.139389 #48646]  INFO -- default-ubuntu-1604: 
-I, [2020-04-23T12:45:37.139889 #48646]  INFO -- default-ubuntu-1604: RUNNING HANDLER [mongodb : enable mongodb] *************************************
-I, [2020-04-23T12:45:37.971816 #48646]  INFO -- default-ubuntu-1604: [0;33mchanged: [localhost][0m
-I, [2020-04-23T12:45:37.978315 #48646]  INFO -- default-ubuntu-1604: 
-I, [2020-04-23T12:45:37.978793 #48646]  INFO -- default-ubuntu-1604: PLAY RECAP *********************************************************************
-I, [2020-04-23T12:45:37.979133 #48646]  INFO -- default-ubuntu-1604: [0;33mlocalhost[0m                  : [0;32mok=11  [0m [0;33mchanged=10  [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-I, [2020-04-23T12:45:37.979575 #48646]  INFO -- default-ubuntu-1604: 
-I, [2020-04-23T12:45:38.203095 #48646]  INFO -- default-ubuntu-1604: Downloading files from <default-ubuntu-1604>
-I, [2020-04-23T12:45:38.211212 #48646]  INFO -- default-ubuntu-1604: Finished converging <default-ubuntu-1604> (3m15.49s).
-I, [2020-04-23T12:45:38.211857 #48646]  INFO -- default-ubuntu-1604: -----> Setting up <default-ubuntu-1604>...
-I, [2020-04-23T12:45:38.214123 #48646]  INFO -- default-ubuntu-1604: Finished setting up <default-ubuntu-1604> (0m0.00s).
-I, [2020-04-23T12:45:38.214307 #48646]  INFO -- default-ubuntu-1604: -----> Verifying <default-ubuntu-1604>...
-I, [2020-04-23T12:45:38.700860 #48646]  INFO -- default-ubuntu-1604: Loaded tests from {:path=>".Users.jasonrobinson.devops.molecule-njs-mdb.test-db-ansible.test.integration.default"} 
-I, [2020-04-23T12:45:39.030784 #48646]  INFO -- default-ubuntu-1604: Finished verifying <default-ubuntu-1604> (0m0.81s).
-I, [2020-04-23T12:45:39.032578 #48646]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
-I, [2020-04-23T12:45:39.050611 #48646]  INFO -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.6.0/gems/mixlib-shellout-3.0.9/lib/mixlib/shellout/unix.rb:343: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
-I, [2020-04-23T12:45:40.674627 #48646]  INFO -- default-ubuntu-1604: /opt/vagrant/embedded/gems/2.2.7/gems/vagrant-2.2.7/lib/vagrant/util/which.rb:37: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
-I, [2020-04-23T12:45:43.495740 #48646]  INFO -- default-ubuntu-1604: ==> default: Forcing shutdown of VM...
-I, [2020-04-23T12:45:44.853105 #48646]  INFO -- default-ubuntu-1604: ==> default: Destroying VM and associated drives...
-I, [2020-04-23T12:45:47.246201 #48646]  INFO -- default-ubuntu-1604: ==> default: [vagrant-hostsupdater] Removing hosts
-I, [2020-04-23T12:45:47.580197 #48646]  INFO -- default-ubuntu-1604: Vagrant instance <default-ubuntu-1604> destroyed.
-I, [2020-04-23T12:45:47.581123 #48646]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m8.55s).
-I, [2020-04-23T12:45:47.581715 #48646]  INFO -- default-ubuntu-1604: Finished testing <default-ubuntu-1604> (4m11.32s).
+I, [2020-04-23T15:26:59.227146 #64596]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
+I, [2020-04-23T15:26:59.229243 #64596]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m0.00s).
